@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back - Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+    </style>
+    <!-- font-awesome icons -->
+    <script src="https://kit.fontawesome.com/9c18f8edbf.js" crossorigin="anonymous"></script>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+        }
+    </style>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo Name">
+            <span>Letsrate</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Books</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flex w-auto 
+        justify-between mb-5">
+            <h1 class="text-4xl flex">Profile </h1>
+            <button class="edit-profile ml=Z">
+                Edit Profile
+                 <i class="fas fa-pencil-alt"></i>
+            </button>
+        </div>  
+      
+
+        <section class="profile-card">
+            <div class="profile-header">
+                <div class="flex w-2/3">
+                <img src="./assets/images/profile.png" alt="User Name" class="profile-avatar">
+                <div class="profile-info">
+                    <h2>User Name</h2>
+                    <div class="profile-stats">
+                        <div class="stat"><span>100</span> Books</div>
+                        <div class="stat"><span>1,245</span> Friend's</div>
+                        <div class="stat"><span>8</span> Following</div>
+                    </div>
+                    <p class="text-xl">Details</p>
+                    <p>Joined in Month DD YEAR</p>
+                    <p><span class="text-blue block">Favorite  GENRES:</span> Romance, Mystery/Thriller, Fantasy, Science Fiction, +5 More</p>
+                </div>
+            </div>
+                <div class="favorite-book p-5">
+                    <h3>MY FAVORITE BOOK</h3>
+                    <img src="./assets/images/fav-book.png" alt="Favorite Book">
+                    <button class="add-book"><i class="fas fa-plus text-2xl text-white"></i></button>
+                </div>
+            </div>
+            <div class="profile-details flex">
+                <div>
+                    <p class="m-5">Male, City, Country</p>
+                    <p class="m-5"><i class="fas fa-birthday-cake"></i> Birth Day : DD/MM/YYYY</p>
+                </div>
+               
+                <div class=" flex flex-col justify-around">
+                    <h3 class="mb-5">My BookShelves</h3>
+                    <div class="shelf-buttons ">
+                        <a href="" class="">Read <span class="block ml-4">(11)</span></a>
+                        <a href="">Currently Reading <span class="block ml-10">(01)</span></a>
+                        <a href="">To Read <span class="block ml-5">(00)</span></a>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="reading-section">
+            <h2>Reading</h2>
+            <div class="book-progress relative">
+                <img src="./assets/images/current.png"  alt="Current Book">
+                <div class="book-info w-full flex justify-between items-center">
+                    <div class="w-1/5 h-40 flex justify-evenly flex-col items-center">
+                        <h1 class="text-2xl">Book Name</h1>
+                        <p class="block">Author Name</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="progress-bar flex">
+                        <div class="progress" style="width: 83%; border-radius: 20px;"></div>
+                </div>
+                    <button class="continue-reading mr-16">Continue</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="statistics-section">
+            <h2>This Week Statistics</h2>
+            <div class="statistics-container">
+                <div class="chart">
+                    <!-- We'll use CSS to create the bar chart -->
+                </div>
+                <div class="premium-ad">
+                    <img src="logo.png" alt="Logo Name" class="small-logo">
+                    <h3>Go Premium</h3>
+                    <p>Explore 25k+ Books with lifetime membership</p>
+                    <button class="premium-button">Go Premium</button>
+                </div>
+            </div>
+        </section>
+
+        <button class="logout-button">Logout</button>
+    </main>
+
+</body>
+</html>
