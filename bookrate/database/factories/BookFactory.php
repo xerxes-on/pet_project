@@ -4,9 +4,6 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Book>
- */
 class BookFactory extends Factory
 {
     /**
@@ -17,7 +14,11 @@ class BookFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title'=>$this->faker->realTextBetween(5, 35),
+            'author_id'=>$this->faker->numberBetween(1,100),
+            'number_of_pages'=>$this->faker->numberBetween(60,500),
+            'published_date'=>$this->faker->dateTimeBetween(-100, 0),
+            'rating'=>$this->faker->randomFloat(2, 0, 10),
         ];
     }
 }
